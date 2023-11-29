@@ -3,7 +3,7 @@ terraform {
     organization = "vardhanpathuri"
 
     workspaces {
-      name = "terra"
+      name = "terraformcloud"
     }
   }
 }
