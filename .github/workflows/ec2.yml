@@ -24,7 +24,7 @@ jobs:
         token: ${{ secrets.TF_API_TOKEN }}
 
     - name: Configure Terraform Cloud
-      run: terraform login <TF_API_TOKEN>
+      run: terraform login ${{ secrets.TF_API_TOKEN }}
 
     - name: Initialize Terraform
       run: terraform init
