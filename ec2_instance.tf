@@ -15,7 +15,7 @@ terraform {
     organization = "vardhanpathuri"
 
     workspaces {
-      name = "terraformcloud"
+      name = "terra"
     }
   }
 }
