@@ -23,9 +23,6 @@ jobs:
         terraform_version: 1.6.3
         token: ${{ secrets.TF_API_TOKEN }}
 
-    - name: Configure Terraform Cloud
-      run: terraform login ${{ secrets.TF_API_TOKEN }}
-
     - name: Initialize Terraform
       run: terraform init
       working-directory: ./
