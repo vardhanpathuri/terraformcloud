@@ -10,13 +10,5 @@ resource "aws_instance" "intro" {
   
 }
 
-terraform {
-  backend "remote" {
-    organization = "vardhanpathuri"
 
-    workspaces {
-      name = "terra"
-    }
-  }
-}
 
