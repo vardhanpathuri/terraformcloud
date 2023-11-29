@@ -3,7 +3,7 @@ terraform {
     organization = "vardhanpathuri"
 
     workspaces {
-      name = "terraformcloud"
+      name = "terraform_ec2"
     }
   }
 }
