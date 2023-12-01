@@ -10,7 +10,7 @@ resource "aws_subnet" "demo_subnet" {
   }
 }
 resource "aws_internet_gateway" "demo-igw" {
-  vpc_id = aws_vpc.demo.vpc.id
+  vpc_id = aws_vpc.demo-vpc.id
 
   tags = {
     Name = "demo-igw"
