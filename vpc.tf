@@ -1,12 +1,20 @@
 resource "aws_vpc" "demo-vpc" {
   cidr_block = "10.10.0.0/16"
 }
-resource "aws_subnet" "demo_subnet" {
+resource "aws_subnet" "demo_subnet1" {
   vpc_id     = aws_vpc.demo-vpc.id
   cidr_block = "10.10.1.0/24"
 
   tags = {
-    Name = "demo_subnet"
+    Name = "demo_subnet1"
+  }
+}
+resource "aws_subnet" "demo_subnet2" {
+  vpc_id     = aws_vpc.demo-vpc.id
+  cidr_block = "10.10.1.0/24"
+
+  tags = {
+    Name = "demo_subnet2"
   }
 }
 resource "aws_internet_gateway" "demo-igw" {
