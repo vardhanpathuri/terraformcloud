@@ -37,7 +37,8 @@ resource "aws_route_table" "demo-rt" {
   }
 }
 resource "aws_route_table_association" "demo-rt_association" {
-  subnet_id      = aws_subnet.demo_subnet.id
+  subnet_id      = aws_subnet.demo_subnet1.id
+  subnet_id      = aws_subnet.demo_subnet2.id
   route_table_id = aws_route_table.demo-rt.id
 }
 resource "aws_security_group" "demo-vpc-sg" {
