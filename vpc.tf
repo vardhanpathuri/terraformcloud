@@ -16,7 +16,7 @@ resource "aws_internet_gateway" "demo-igw" {
     Name = "demo-igw"
   }
 }
-resource "aws_route_table" "" {
+resource "aws_route_table" "demo-rt" {
   vpc_id = aws_vpc.demo-vpc.id
 
   route {
